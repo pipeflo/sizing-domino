@@ -1,0 +1,11 @@
+applications:
+- name: dpc-sizing-service-domino
+  path: target/sizing-service-domino.war
+  memory: 256M
+  env:
+    DOMINO_SIZING_SERVICE_LOG: true
+    DOMINO_QUESTIONNAIRE_DBNAME: questionnaire
+    MACHINE_TYPES_DBNAME: questionnaire
+    DOMINO_SPREADSHEET_TEMPLATE: IBM_Domino_Server_Workload_Tool_24Aug2017v2_TEMPLATE.xlsx
+  services:
+  - dpc-myfavorites-cloudantNoSQLDB

@@ -1,0 +1,7 @@
+.classpath
+*.jpage
+**/.DS_Store
+.factorypath
+.settings
+/.apt_generated/
+/target/*/
